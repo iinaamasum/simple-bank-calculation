@@ -28,19 +28,19 @@
         <div class="col">
           <div class="bg-primary rounded px-1 py-3 shadow-sm">
             <h5>Deposit</h5>
-            <h2>$<span>00</span></h2>
+            <h2>$<span id="deposit-amount">00</span></h2>
           </div>
         </div>
         <div class="col">
           <div class="bg-secondary rounded px-1 py-3 shadow-sm">
             <h5>Withdraw</h5>
-            <h2>$<span>00</span></h2>
+            <h2>$<span id="withdraw-amount">00</span></h2>
           </div>
         </div>
         <div class="col">
           <div class="bg-success rounded px-1 py-3 shadow-sm">
             <h5>Total Amount</h5>
-            <h2>$<span>00</span></h2>
+            <h2>$<span id="total-amount">200</span></h2>
           </div>
         </div>
       </div>
@@ -59,14 +59,16 @@
               id="deposit"
               placeholder="Enter the amount of Deposit"
             />
-            <button class="btn btn-outline-success fw-bold">Deposit</button>
+            <button id="deposit-btn" class="btn btn-outline-success fw-bold">
+              Deposit
+            </button>
           </div>
         </div>
         <div class="col">
           <div class="d-grid gap-2 bg-amount rounded p-3 shadow-sm">
             <label
               for="formGroupExampleInput"
-              class="form-label text-success fs-2"
+              class="form-label text-danger fs-2"
               >Withdraw Box</label
             >
             <input
@@ -75,7 +77,9 @@
               id="withdraw"
               placeholder="Enter the amount of Withdraw"
             />
-            <button class="btn btn-outline-danger fw-bold">Withdraw</button>
+            <button id="withdraw-btn" class="btn btn-outline-danger fw-bold">
+              Withdraw
+            </button>
           </div>
         </div>
       </div>
