@@ -1,0 +1,15 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .w-75 {
+    width: 55% !important;
+    margin: 0 auto;
+  }
+  body{
+      background-color: aliceblue;
+  }
+}
