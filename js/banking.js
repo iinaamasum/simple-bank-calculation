@@ -41,22 +41,9 @@ document.getElementById("deposit-btn").addEventListener("click", (event) => {
   /* getting input and checking/validation */
   const deposit = idToValue("deposit", true);
   const depositVal = errorMessage(deposit);
-  console.log(
-    "🚀 ~ file: banking.js ~ line 41 ~ document.getElementById ~ depositVal",
-    depositVal
-  );
 
   const previousDeposit = idToValue("deposit-amount", false);
-  console.log(
-    "🚀 ~ file: banking.js ~ line 44 ~ document.getElementById ~ previousDeposit",
-    previousDeposit
-  );
-
   const previousTotal = idToValue("total-amount", false);
-  console.log(
-    "🚀 ~ file: banking.js ~ line 45 ~ document.getElementById ~ previousTotal",
-    previousTotal
-  );
 
   /* calculation */
   const updatedDeposit = calcOfVal(depositVal, previousDeposit, true);
@@ -84,6 +71,7 @@ document.getElementById("withdraw-btn").addEventListener("click", (event) => {
     updateText(updatedWithdraw, "withdraw-amount");
     updateText(updatedTotal, "total-amount");
   } else {
-    alert("Balance is low");
+    alert("Balance is low, please login again");
+    window.location.href = "./index.html";
   }
 });
