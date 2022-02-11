@@ -4,12 +4,16 @@ body {
   padding: 0;
 }
 
+.bg-amount{
+  background-color: rgba(135, 207, 235, 0.183);
+}
+
 @media only screen and (min-width: 768px) {
   .w-75 {
     width: 55% !important;
     margin: 0 auto;
   }
-  body{
-      background-color: aliceblue;
+  body {
+    background-color: aliceblue;
   }
 }
