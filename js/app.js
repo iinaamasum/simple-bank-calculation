@@ -4,7 +4,7 @@ document.getElementById("submit").addEventListener("click", function (e) {
   const userPassword = document.getElementById("floatingPassword").value;
   if (userEmail == "" || userPassword == "") {
     alert("You have entered null vlaue");
-  } else if (userEmail == "email" && userPassword == "demo") {
+  } else if (userEmail == "name@email.com" && userPassword == "demo") {
     window.location.href = "./banking.html";
   } else {
     alert("Please Enter valid information");
