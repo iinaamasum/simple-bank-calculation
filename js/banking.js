@@ -75,3 +75,27 @@ document.getElementById("withdraw-btn").addEventListener("click", (event) => {
     window.location.href = "./index.html";
   }
 });
+
+/* upper text effect */
+document.getElementById("deposit").addEventListener("focus", (event) => {
+  document.getElementById("text").innerText = "You have selected Deposit";
+  document.getElementById("text").classList = "";
+  document.getElementById("text").classList.toggle("text-success");
+});
+
+document.getElementById("deposit").addEventListener("blur", (event) => {
+  document.getElementById("text").innerText = "Select an option of banking";
+  document.getElementById("text").classList = "";
+  document.getElementById("text").classList.toggle("text-white");
+});
+document.getElementById("withdraw").addEventListener("focus", (event) => {
+  document.getElementById("text").innerText = "You have selected Withdraw";
+  document.getElementById("text").classList = "";
+  document.getElementById("text").classList.toggle("text-danger");
+});
+
+document.getElementById("withdraw").addEventListener("blur", (event) => {
+  document.getElementById("text").innerText = "Select an option of banking";
+  document.getElementById("text").classList = "";
+  document.getElementById("text").classList.toggle("text-white");
+});
