@@ -12,3 +12,9 @@ document.getElementById("submit").addEventListener("click", function (e) {
   document.getElementById("floatingInput").value = "";
   document.getElementById("floatingPassword").value = "";
 });
+
+document.getElementById("reset").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("floatingInput").value = "";
+  document.getElementById("floatingPassword").value = "";
+});
